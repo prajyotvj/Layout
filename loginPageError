@@ -1,0 +1,53 @@
+import React from "react";
+import "../assets/styling/Header.css";
+import LogoImg from "../assets/images/react.png";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
+const Header = () => {
+  const navigate = useNavigate();
+
+  let fetchedUser = null;
+  try {
+    const storedUser = localStorage.getItem("user");
+    if (storedUser) {
+      fetchedUser = JSON.parse(storedUser);
+    }
+  } catch (error) {
+    console.error("Error parsing user from localStorage", error);
+  }
+
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    navigate("/login");
+  };
+
+  return (
+    <div className="header-container">
+      <div className="navdiv">
+        <div className="logo">
+          <img src={LogoImg} alt="Logo" height="40px" />
+          <h1 className="heading">React Assignment - 7</h1>
+        </div>
+        <div className="nav-links">
+          <ul>
+            <li>{!fetchedUser && <Link to="/login">Login</Link>}</li>
+            <li>
+              {fetchedUser && (
+                <h5>
+                  Welcome {fetchedUser.firstName} {fetchedUser.lastName}
+                </h5>
+              )}
+            </li>
+            <li>
+              {fetchedUser && <button onClick={handleLogout}>Logout</button>}
+            </li>
+            <li> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Header;
