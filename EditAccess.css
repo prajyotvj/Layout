@@ -1,0 +1,48 @@
+.edit-topic-section{
+  background-color: #bbe9ff;
+  border:2px solid #004f94;
+  border-radius: 5px;
+}
+
+.topic-main-heading{
+  color:#003f75;
+}
+
+.topic-heading {
+  font-weight: 600;
+  font-size: 20px;
+  color:#0214b4;
+}
+
+.topic-label {
+  font-size: 20px;
+  margin-left: 4px;
+}
+.check-input {
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+}
+.icon{
+  margin-left: 4px;
+}
+
+.save-button {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 5px 20px 5px 20px;
+  background-color: #0214b4;
+  color: white;
+  border: 1px solid #ffffff;
+  border: none;
+  margin-left: 10px;
+  font-size: large;
+  margin-right: 10px;
+}
+
+.save-button:hover {
+  scale: 105%;
+  transition-duration: 200ms;
+  opacity: 0.8;
+  cursor: pointer;
+}

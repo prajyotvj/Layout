@@ -1,0 +1,36 @@
+.admin-dashboard {
+  padding: 20px;
+}
+
+.admin-dashboard ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.admin-dashboard li {
+  margin-bottom: 10px;
+}
+
+.edit-link {
+  margin-left: 10px;
+  color: #0214b4;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.button-edit {
+  background-color: #0214b4;
+  color: white;
+  border: none;
+  padding: 7px 10px 7px 10px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.button-edit:hover {
+  background-color: white;
+  border: 1px solid #0214b4;
+  color: #0214b4;
+  transition-duration: 400ms;
+  scale: 110%;
+}

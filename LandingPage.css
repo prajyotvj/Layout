@@ -1,0 +1,128 @@
+.introduction-section {
+  background: url(../images/banner-img.jpg) no-repeat center top;
+  background-size: cover;
+  padding: 250px 0 210px 0;
+  color: #fff;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-section-container {
+  background-color: rgb(255, 255, 255);
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.container-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.banner-btn {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 10px 20px 10px 20px;
+  background-color: #004e92;
+  color: white;
+  border: 1px solid #ffffff;
+  border: none;
+  margin-left: 10px;
+  font-size: large;
+  margin-right: 10px;
+}
+
+.banner-btn:hover {
+  scale: 105%;
+  transition-duration: 200ms;
+  opacity: 0.8;
+  background-color: #7297a7;
+  cursor: pointer;
+}
+
+.underline {
+  display: block;
+  width: 20px;
+}
+
+#heading-main {
+  color: solid #004e92;
+  font-size: 70px;
+}
+
+.card-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.card-heading {
+  font-size: 30px;
+  font-weight: bold;
+  color: #004e92;
+}
+
+.card-container {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card-container-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: 200px;
+  margin: 20px;
+  background-color: #e9edee;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.feature-img {
+  margin-top: 5px;
+  height: 100px;
+  width: 100px;
+}
+
+.feature-content {
+  width: 100%;
+  height: 120px;
+}
+
+.feature-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #004e92;
+}
+
+.card-container-section:hover {
+  scale: 110%;
+  transition-duration: 400ms;
+}
